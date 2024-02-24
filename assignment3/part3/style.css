@@ -43,3 +43,49 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'Lovato';
+  src: url('Lovato-Light.woff2') format('woff2'),
+      url('Lovato-Light.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('JosefinSlab-Bold.woff2') format('woff2'),
+      url('JosefinSlab-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: lovato, serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: Josefin Slab, serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
