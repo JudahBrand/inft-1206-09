@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Lovato';
+    src: url('Lovato-Black.woff2') format('woff2'),
+        url('Lovato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lovato';
+    src: url('Lovato-Regular.woff2') format('woff2'),
+        url('Lovato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lovato-Demi';
+    src: url('Lovato-Demi.woff2') format('woff2'),
+        url('Lovato-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lovato';
+    src: url('Lovato-Light.woff2') format('woff2'),
+        url('Lovato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lovato';
+    src: url('Lovato-Bold.woff2') format('woff2'),
+        url('Lovato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab.woff2') format('woff2'),
+        url('JosefinSlab.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-Light.woff2') format('woff2'),
+        url('JosefinSlab-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-Bold.woff2') format('woff2'),
+        url('JosefinSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-BoldItalic.woff2') format('woff2'),
+        url('JosefinSlab-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-Italic.woff2') format('woff2'),
+        url('JosefinSlab-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-LightItalic.woff2') format('woff2'),
+        url('JosefinSlab-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-SemiBold.woff2') format('woff2'),
+        url('JosefinSlab-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-SemiBoldItalic.woff2') format('woff2'),
+        url('JosefinSlab-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-Thin.woff2') format('woff2'),
+        url('JosefinSlab-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('JosefinSlab-ThinItalic.woff2') format('woff2'),
+        url('JosefinSlab-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
