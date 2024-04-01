@@ -1,4 +1,3 @@
-// Step 1
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -8,39 +7,37 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-// Step 2
-storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
-insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas']
-insertY = ['the soup kitchen', 'Disneyland', 'the White House']
-insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away']
+//step 2
+storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
 
-// Step 3
-randomize.addEventListener('click', result);
+ insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
+ insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
+ insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
-function result() {
-  let newStory = storyText;
+ //step 3
+ randomize.addEventListener('click', result);
 
+ function result() {
+  let newstory = storytext;
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
-  
-  // TODO: Use .replace to replace the placeholders 'insertx', 'inserty' and 'insertz' with strings from xItem, yItem and zItem
 
-  if(customName.value !== '') {
+  if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
-
+    newstory = newstory.replace('Bob', name);
   }
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300 * 0.071429) + ' Stone';
-    const temperature =  Math.round((94 - 32) * 5/9) + ' Centigrade';
-    newStory = newStory.replace('94 fahrenheit', temperature).replace('300 stone', weight)
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(3000.453592) + ' Stone';
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' Centigrade';
+    newstory = newstory.replace('94 fahrenheit', temperature).replace('300 pounds', weight);
   }
 
-  // Replace placeholders with random values
-  newStory = newStory.replace(/:insertX/g, xItem).replace(/:insertY/g, yItem).replace(/:insertY/g, zItem);
+  // Replace placeholders with random values first
+  newstory = newstory.replace(/:insertx:/g, xItem).replace(/:inserty:/g, yItem).replace(/:insertz:/g, zItem);
 
-  story.textContent = newStory;
+  story.textContent = newstory;
   story.style.visibility = 'visible';
 }
+   replaceall = newstory.replace(/:insertx:/g, xItem).replace(/:inserty:/g, yItem).replace(/:insertz:/g, zItem);
