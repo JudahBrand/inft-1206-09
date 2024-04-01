@@ -33,11 +33,13 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300 * 0.071429) + ' stone';
-    const temperature =  Math.round((94 - 32) * 5/9) + ' centigrade';
-    newStory = newStory.replace('94 fahrenheit', temperature)
-    newStory = newStory.replace('300 stone', weight)
+    const weight = Math.round(300 * 0.071429) + ' Stone';
+    const temperature =  Math.round((94 - 32) * 5/9) + ' Centigrade';
+    newStory = newStory.replace('94 fahrenheit', temperature).replace('300 stone', weight)
   }
+
+  // Replace placeholders with random values
+  newStory = newStory.replace(/:insertX/g, xItem).replace(/:insertY/g, yItem).replace(/:insertY/g, zItem);
 
   story.textContent = newStory;
   story.style.visibility = 'visible';
