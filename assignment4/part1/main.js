@@ -29,7 +29,7 @@ storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When th
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(0.07142857) + ' Stone';
+    const weight = Math.round(21.42857) + ' Stone';
     const temperature = Math.round((94 - 32) * 5 / 9) + ' Centigrade';
     newstory = newstory.replace('94 fahrenheit', temperature).replace('300 pounds', weight);
   }
