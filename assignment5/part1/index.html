@@ -33,8 +33,8 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
+        <input type="search" name="q" placeholder="Search query" aria-label="Search bar input">
+        <input type="submit" value="Go!" aria-label="Search bar button">
       </form>
     </nav>
 
@@ -55,19 +55,20 @@
         <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
         
         <table>
+          <caption>Statistics and details about bear types</caption>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <th scope="col">Bear Type</th>
+              <th scope="col">Coat</th>
+              <th scope="col">Adult size</th>
+              <th scope="col">Habitat</th>
+              <th scope="col">Lifespan</th>
+              <th scope="col">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <th scope="row">Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -75,7 +76,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <th scope="row">Urban</th>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -89,11 +90,11 @@
         
         <p>Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.</p>
         
-        <img src="wild-bear.jpg">
+        <img src="wild-bear.jpg" aria-label="An image of a wild bear in a river.">
         
         <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
         
-        <img src="urban-bear.jpg">
+        <img src="urban-bear.jpg" aria-label="A greyscale image of an urban bear in an enclosure.">
         
         <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
         
@@ -104,9 +105,10 @@
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
         
         <audio controls>
-          <source src="bear.mp3" type="audio/mp3" aria-labelledby="bear.mp3">
+          <source src="bear.mp3" type="audio/mp3" aria-label="This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.">
           <source src="bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          <a target="_blank" href="bear.mp3">Access the audio file here.</a>
         </audio>
 
         <aside>
@@ -127,12 +129,12 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                <p>Your name:</p>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label aria-labelledby="name">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="name input box">
               </div>
               <div class="flex-pair">
-                <p>Your comment:</p>
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                <label aria-labelledby="comment">Your comment:</label>
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="comment input box">
               </div>
               <div>
                 <input type="submit" value="Submit comment">
